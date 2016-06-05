@@ -1,12 +1,10 @@
-# Mavis
-
+# Mavis :octocat:
 Simple PHP framework, where [Slim](http://slimframework.com) goes full-stack. :space_invader:
 
 ## Disclaimer
 *Note:* This is a work in progress and should not be used (yet) for production systems. The project is currently in early alpha stage. Check back later.
 
 ## Requirements
-
 - [Composer](https://getcomposer.org/)
 - PHP __5.5.+__ _with_
   - _JSON Extension_
@@ -34,7 +32,7 @@ Mavis is maintained by using the [Semantic Versioning Specification](http://semv
 Mavis has been released under the [MIT License](LICENSE.txt).
 
 ## Libraries
-| Provider | Library | License |
+| Vendor | Library | License |
 | --- | --- | --- |
 | [Slim Framework](http://slimframework.com) | [CSRF](http://slimframework.com/docs/features/csrf.html) | MIT |
 | [Slim Framework](http://slimframework.com) | [Flash](https://github.com/slimphp/Slim-Flash) | MIT |
