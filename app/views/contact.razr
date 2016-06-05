@@ -1,0 +1,42 @@
+@include('header.razr')
+
+@block('contact')
+            <h1 class="title">Contact form</h1>
+
+            <div id="container">
+                <p>Fill the form with the required data...</p>
+
+                @if( $flash.status !== null )
+
+                <div id="flash" class="@( $flash.code )">
+                    <span class="flash-message">@( $flash.msg )</span>
+                </div>
+
+                @else
+
+                <form name="contact-form" action="/contact" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="What is your name?" id="name" name="name" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="What is your email?" id="email" name="email" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="message">Message</label>
+                        <textarea placeholder="Type your message here..." id="message" name="message" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="@( $csrf_name_key )" value="@( $csrf_name )">
+                    <input type="hidden" name="@( $csrf_value_key )" value="@( $csrf_value )">
+                    <input type="submit" value="Send message">
+                </form>
+
+                @endif
+            </div>
+@endblock
+
+@include('footer.razr')

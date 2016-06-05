@@ -1,0 +1,9 @@
+@block('footer')
+			<footer>
+				This page was loaded in <strong>@($render_time)</strong> seconds,
+				using <strong>@($memory_usage)</strong> of memory.
+			</footer>
+		</div>
+	</body>
+</html>
+@endblock

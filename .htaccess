@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks -Indexes
+    RewriteEngine On
+
+    # Use this if you're having troubles when installing inside a subdomain or something like it
+    # RewriteBase /
+
+    # prevents files starting with dot to be viewed by browser
+    RewriteRule /\.|^\. - [F]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# Specify the environment of the system
+SetEnv MAVIS_ENV development

@@ -1,0 +1,32 @@
+@block('header')
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	    <link rel="stylesheet" href="@($appurl)/assets/css/errors/notfound.css" media="screen" type="text/css">
+	    <link rel="icon" href="@($appurl)/assets/images/favicon.ico" media="screen" type="image/x-icon">
+
+	    <title>Oops! There's nothing here... &middot; @($site_name)</title>
+    </head>
+	<body>
+@endblock
+
+@block('body')
+        <h1>Page Not Found</h1>
+
+        <p>
+            The link <strong>@($uri)</strong> doesn't match to a valid page.
+            If your believe that this is a mistake, please <a href="@($contact)" target="_self">contact us</a>.
+            <br>
+            Or... You can visit our home page at the link below.
+        </p>
+
+        <a href="@($appurl)" target="_self">Home Page</a>
+@endblock
+
+@block('footer')
+    </body>
+</html>
+@endblock

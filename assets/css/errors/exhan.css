@@ -1,0 +1,169 @@
+::selection {
+    background-color: #ffe8a3;
+    color: #000;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: #ffe8a3;
+    color: #000;
+    text-shadow: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Arial, Verdana, Helvetican, sans-serif;
+}
+
+h1, h2, h3, p {
+    font-weight: lighter;
+    margin: 5px;
+}
+
+h1 {
+    color: #444;
+    margin-top: 1px;
+}
+
+h2 {
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+p {
+    font-size: 14px;
+    color: #444;
+    margin-top: -3px;
+}
+
+div.exception {
+    padding: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+div.exception > p.location {
+    color: #525252;
+}
+
+pre, .code {
+    font-family: Courier, monospace;
+    font-size: 12px;
+    margin: 0px;
+}
+
+/*pre{height:23px;}*/
+
+div.code {
+    height: auto;
+    margin: 10px 6px;
+    overflow: auto;
+}
+
+div.code > div.highlight-overlay::after {
+    content: "<<<<<";
+    color: #e13300;
+    margin-right: 5px;
+    float: right;
+}
+
+div.code > div.highlight-overlay {
+    position: relative;
+    top: -92px;
+    color: #fff;
+    height: 16px;
+    background-color: rgba(78, 78, 78, 0.2);
+}
+
+span.code-box {
+    font-size: 12px;
+    padding: 2px 4px;
+    color: #d14;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+a {
+    color: #0088cc;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+a:hover {
+    color: #005580;
+}
+
+abbr:hover {
+    cursor: help;
+}
+
+pre.prettyprint {
+    background-color: #1d1f21;
+    border: 1px solid #333;
+}
+
+header#exception {
+    background-color: #fff;
+    border-bottom: 1px solid #dadada;
+    box-shadow: 0 1px 5px rgba(216, 216, 216, 0.5);
+    -o-box-shadow: 0 1px 5px rgba(216, 216, 216, 0.5);
+    -ms-box-shadow: 0 1px 5px rgba(216, 216, 216, 0.5);
+    -moz-box-shadow: 0 1px 5px rgba(216, 216, 216, 0.5);
+    -webkit-box-shadow: 0 1px 5px rgba(216, 216, 216, 0.5);
+    padding: 5px 0 0 0;
+    width: 100%;
+    position: relative;
+}
+
+header#exception > h1 {
+    padding-left: 10px;
+    color: #242424;
+}
+
+header#exception > h1 > span.exception-code {
+    color: #d14;
+    font-size: 22px;
+    margin-top: 3px;
+}
+
+header#exception > h1 > span.exception-code:before {
+    content:"[#";
+    padding-top:5px;
+}
+
+header#exception > h1 > span.exception-code:after {
+    content:"]";
+    padding-top:5px;
+}
+
+header#exception > h1 > span.divisor {
+    color: #525252;
+    font-size: 26px;
+}
+
+header#exception > h1 > span.message {
+    color: #525252;
+    font-size: 16px;
+}
+
+header#exception > h1 > small.refresh {
+    float: right;
+    padding-right: 8px;
+    font-size: 14px;
+    margin-top: 9px;
+}
+
+hr.divisor {
+    margin: 0 0 7px 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font: 12px/1.5 Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 48px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+
+    color: #dd1144;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd3e24;
+}

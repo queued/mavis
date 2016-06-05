@@ -1,0 +1,57 @@
+@block('header')
+<!DOCTYPE html>
+<html>
+		<meta charset='UTF-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="stylesheet" href="@($site_url)/assets/css/errors/exhan.css" media="screen" type="text/css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/arta.min.css" media="screen" type="text/css">
+		<link rel="icon" href="@($site_url)/assets/images/favicon.ico" media="screen" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+		<title>@($type)[#@($code)] &middot; @($site_name)</title>
+	</head>
+	<body>
+@endblock
+
+@block('body')
+<header id="exception">
+     <h1>
+        @($type)<span class="exception-code">@($code)</span>
+
+        <span class="divisor">/</span>
+
+        <span class="message">Message: <span class="code-box">@($message)</span></span>
+
+        <small class="refresh">
+            <a href="javascript:refresh();">Refresh</a>
+        </small>
+     </h1>
+</header>
+<div class="exception">
+    <h2>Location</h2>
+    <p class="location">
+        Exception thrown on line: <span class="code-box">@($line)</span> in file:
+        <span class="code-box"><abbr title="@($path)">@($file)</span>
+    </p>
+
+    <div class="code">
+        <pre class="prettyprint"><code class="language-php">@($lines)</code></pre>
+		<div class="highlight-overlay"></div>
+    </div>
+@endblock
+
+@block('footer')
+</div>
+
+<script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+
+    function refresh() {
+        var current = window.location.href;
+        window.location.href = current;
+    }
+</script>
+</body>
+</html>
+@endblock

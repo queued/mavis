@@ -1,0 +1,16 @@
+@block('header')
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Ionia">
+		<meta charset='UTF-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="stylesheet" href="@($appurl)/assets/css/style.css" media="screen" type="text/css">
+		<link rel="icon" href="@($appurl)/assets/images/favicon.ico" media="screen" type="image/x-icon">
+
+		<title>@($title) &middot; @($appname)</title>
+	</head>
+	<body>
+		<div id="wrapper">
+@endblock

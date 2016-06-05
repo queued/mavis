@@ -1,0 +1,53 @@
+{
+    "name": "queued/mavis",
+    "description": "Simple full-stack PHP framework built on top of Slim",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["framework", "mavis", "lightweight"],
+    "homepage": "http://github.com/queued/mavis",
+    "authors": [
+        {
+            "name": "All Unser Miranda",
+            "email": "miranda.hates@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+          "app/paths.php",
+          "app/functions.php"
+        ],
+        "psr-4": {
+            "Mavis\\": "core/",
+            "Mavis\\Events\\": "app/events/",
+            "Mavis\\App\\Controllers\\": "app/controllers/",
+            "Mavis\\App\\Models\\": "app/models/"
+        }
+    },
+    "require": {
+        "php" : "^5.5 || ^7.0",
+        "ext-mcrypt": "*",
+        "ext-json": "*",
+        "ext-pcre": "*",
+
+        "slim/slim": "^3.0",
+        "illuminate/database": "*",
+        "evenement/evenement": "~2.0",
+        "monolog/monolog": "1.17.*",
+        "pagekit/razr": "dev-master",
+        "alexshelkov/simpleacl": "2.*",
+        "nesbot/carbon": "~1.21",
+        "slim/csrf": "*",
+        "slim/http-cache": "*",
+        "slim/flash": "dev-master",
+        "oscarotero/psr7-middlewares": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "config" : {
+        "vendor-dir": "app/vendor"
+    }
+}
