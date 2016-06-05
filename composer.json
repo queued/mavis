@@ -31,12 +31,10 @@
         "ext-pcre": "*",
 
         "slim/slim": "^3.0",
-        "illuminate/database": "*",
         "evenement/evenement": "~2.0",
         "monolog/monolog": "1.17.*",
         "pagekit/razr": "dev-master",
         "alexshelkov/simpleacl": "2.*",
-        "nesbot/carbon": "~1.21",
         "slim/csrf": "*",
         "slim/http-cache": "*",
         "slim/flash": "dev-master",

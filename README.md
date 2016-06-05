@@ -1,4 +1,6 @@
 # Mavis :octocat:
+[![Latest Stable Version](https://poser.pugx.org/queued/mavis/v/stable)](https://packagist.org/packages/codesans/mavis) [![Latest Unstable Version](https://poser.pugx.org/queued/mavis/v/unstable)](https://packagist.org/queued/codesans/mavis) [![License](https://poser.pugx.org/queued/mavis/license)](https://packagist.org/packages/queued/mavis)
+
 Simple PHP framework, where [Slim](http://slimframework.com) goes full-stack. :space_invader:
 
 ## Disclaimer
@@ -37,10 +39,8 @@ Mavis has been released under the [MIT License](LICENSE.txt).
 | [Slim Framework](http://slimframework.com) | [CSRF](http://slimframework.com/docs/features/csrf.html) | MIT |
 | [Slim Framework](http://slimframework.com) | [Flash](https://github.com/slimphp/Slim-Flash) | MIT |
 | [Slim Framework](http://slimframework.com) | [HTTP-Cache](http://slimframework.com/docs/features/caching.html) | MIT |
-| [Laravel Framework](https://laravel.com) | [Illuminate/Database](https://github.com/illuminate/database) | MIT |
 | [Igor W.](https://github.com/igorw) | [Événement](https://github.com/igorw/evenement) | MIT |
 | [Jordi Boggiano](https://github.com/Seldaek) | [Monolog](https://github.com/Seldaek/monolog)| MIT |
 | [Pagekit](https://www.pagekit.com/) | [Razr](https://github.com/pyrocms/lex) | MIT |
-| [Brian Nesbitt](https://github.com/briannesbitt) | [Carbon](https://github.com/briannesbitt/Carbon) | MIT |
 | [Oscar Otero](https://github.com/oscarotero) | [PSR-7 Middlewares](https://github.com/oscarotero/psr7-middlewares) | MIT |
 | [Alex Shelkovskiy](https://github.com/alexshelkov) | [SimpleAcl](https://github.com/alexshelkov/SimpleAcl) | New BSD |
