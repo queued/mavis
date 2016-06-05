@@ -1,5 +1,5 @@
 # Mavis :octocat:
-[![Latest Stable Version](https://poser.pugx.org/queued/mavis/v/stable)](https://packagist.org/packages/codesans/mavis) [![Latest Unstable Version](https://poser.pugx.org/queued/mavis/v/unstable)](https://packagist.org/queued/codesans/mavis) [![License](https://poser.pugx.org/queued/mavis/license)](https://packagist.org/packages/queued/mavis)
+[![Latest Stable Version](https://poser.pugx.org/queued/mavis/v/stable)](https://packagist.org/packages/queued/mavis) [![Latest Unstable Version](https://poser.pugx.org/queued/mavis/v/unstable)](https://packagist.org/packages/queued/mavis) [![License](https://poser.pugx.org/queued/mavis/license)](https://packagist.org/packages/queued/mavis)
 
 Simple PHP framework, where [Slim](http://slimframework.com) goes full-stack. :space_invader:
 
