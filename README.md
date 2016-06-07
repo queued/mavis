@@ -19,7 +19,8 @@ Simple PHP framework, where [Slim](http://slimframework.com) goes full-stack. :s
 ## Installation
 
 ### Composer
-```$ composer require queued/mavis --prefer-dist```
+Just run: ```$ composer create-project queued/mavis <dir> dev-master -o```
+> Note that ```<dir>``` is where the project will be installed.
 
 ### Regular installation
 If you are looking for an easier way to install Mavis, just download the latest version from [here](https://github.com/queued/mavis/releases). Extract the `.zip` file you just downloaded and deploy to your server.
