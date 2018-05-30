@@ -31,7 +31,7 @@ use Mavis\Kernel;
  *
  * @version 0.1.0
  */
-class ServerError
+class ServerErrorMiddleware
 {
     public function __construct()
     {
@@ -40,10 +40,10 @@ class ServerError
         $container['errorHandler'] = $this;
 
         // Set error handler
-        set_error_handler(['Mavis\\Middlewares\\Errors\\ServerError', 'errorHandler']);
+        set_error_handler(['Mavis\\Middlewares\\Errors\\ServerErrorMiddleware', 'errorHandler']);
 
         // Set fatal error handler
-        register_shutdown_function(['Mavis\\Middlewares\\Errors\\ServerError', 'errorHandler']);
+        register_shutdown_function(['Mavis\\Middlewares\\Errors\\ServerErrorMiddleware', 'errorHandler']);
 
         // Supress the error displaing
         ini_set('display_errors', 'Off');
@@ -59,7 +59,6 @@ class ServerError
     {
         // FIXME: Display error page to production systems (data-less)
 
-        dde('Something went to shit.');
         return $next($request, $response);
     }
 

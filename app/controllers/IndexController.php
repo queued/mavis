@@ -46,7 +46,7 @@ class IndexController extends Controller
             'cookie_data' => $this->cookie->get('mavis', '[ none ]'),
             'session_data' => $this->session->get('mavis', '[ none ]'),
             'title' => 'Welcome',
-            'link' => 'https://mavisphp.com',
+            'link' => 'https://la2eden.com',
             'args' => $args
         ];
 

@@ -34,7 +34,7 @@ return [
     'database' => [
         'host' => 'localhost',
         'username' => 'root',
-        'password' => 'root',
+        'password' => '',
         'persistent' => true // improves WEBSITE performance, but decreases DATABASE performance
     ],
     'kernel' => [

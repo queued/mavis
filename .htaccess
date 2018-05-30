@@ -3,7 +3,7 @@
     RewriteEngine On
 
     # Use this if you're having troubles when installing inside a subdomain or something like it
-    # RewriteBase /
+    RewriteBase /
 
     # prevents files starting with dot to be viewed by browser
     RewriteRule /\.|^\. - [F]

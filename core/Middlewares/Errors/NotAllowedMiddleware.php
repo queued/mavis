@@ -24,7 +24,7 @@
 
 namespace Mavis\Middlewares\Errors;
 
-class NotAllowed
+class NotAllowedMiddleware
 {
     // code
 }

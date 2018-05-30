@@ -29,12 +29,10 @@ use Mavis\Events\OnNotFoundEvent;
 use Mavis\Events\OnStartEvent;
 use Mavis\Events\OnFinishEvent;
 use Evenement\EventEmitter;
-use Mavis\Config;
-use Mavis\Logger;
 use Mavis\Middlewares\ExHan\ExHanMiddleware;
-use Mavis\Middlewares\Errors\ServerError;
-use Mavis\Middlewares\Errors\NotAllowed;
-use Mavis\Middlewares\Errors\Forbidden;
+use Mavis\Middlewares\Errors\ServerErrorMiddleware;
+use Mavis\Middlewares\Errors\NotAllowedMiddleware;
+use Mavis\Middlewares\Errors\ForbiddenMiddleware;
 use Mavis\Middlewares\Errors\NotFound;
 use Mavis\Middlewares\Session\Handler;
 use Mavis\Middlewares\Session\Config as SessionConfig;
@@ -214,7 +212,7 @@ class Kernel
         $config = new SessionConfig([
             'name' => Config::get('kernel.session.name', 'session'),
             'autorefresh' => Config::get('kernel.session.autorefresh', false),
-            'lifetime' => Config::get('kernel.session.lifetime', '1 hour')
+            'lifetime' => Config::get('kernel.session.lifetime', '24 hours')
         ]);
         $this->session = new Handler($config);
         $this->cookies = new CookieJar();
